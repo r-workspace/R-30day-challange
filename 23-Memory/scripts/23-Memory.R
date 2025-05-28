@@ -1,6 +1,6 @@
 
 
-# SECTION 0: INSTALL NECESSARY  PACKAGES -------------------------------------
+# SECTION 0: INSTALL NECESSARY  PACKAGES ----------- --------------------------
 
 # List of required packages
 required_packages <- c("ggspatial", "ggplot2", "sf", "tmap", "here", "magick", "grid", "cowplot")
