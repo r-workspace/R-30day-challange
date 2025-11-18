@@ -2,6 +2,7 @@
 
 # 0 :  Necessary Packages ------------------------------------------------------
 
+
 # List of required packages
 required_packages <- c("ggspatial", "ggplot2", "sf", "tmap", "here", "magick",
                        "grid", "cowplot", "gganimate", "gifski", "leaflet",
