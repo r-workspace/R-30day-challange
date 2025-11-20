@@ -24,7 +24,7 @@ st_crs(regions)
 # 2) Get Netherlands outline (for context)
 # -------------------------------------------------
 nl <- ne_countries(
-    scale = "medium",
+    scale = "medium", # nolint
     country = "Netherlands",
     returnclass = "sf"
 )
@@ -39,7 +39,7 @@ nl <- st_transform(nl, target_crs)
 # 3) Define colors & shapes (similar to your web map)
 # -------------------------------------------------
 type_colors <- c(
-    "Tabaksschuur"   = "#000000", # barns - black
+    "Tabaksschuur"   = "#000000", # barns - black # nolint: indentation_linter.
     "Sigarenfabriek" = "#8B4513", # cigar factory - brown
     "Tabakshofstede" = "#228B22", # farmstead - green
     "Tabakspakhuis"  = "#4B0082" # warehouse - indigo
@@ -93,9 +93,9 @@ p <- ggplot() +
         name   = "Heritage type"
     ) +
     coord_sf(
-        xlim = st_bbox(nl)[c("xmin", "xmax")],
-        ylim = st_bbox(nl)[c("ymin", "ymax")],
-        expand = FALSE
+        xlim = c(5.40, 5.60),
+        ylim = c(51.93, 52.04),
+        expand = TRUE
     ) +
     labs(
         title    = "Tobacco Heritage in the Netherlands",
