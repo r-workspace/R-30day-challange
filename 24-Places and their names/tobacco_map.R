@@ -77,6 +77,17 @@ p <- ggplot() +
         linewidth = 0.8
     ) +
 
+    # Region labels
+    geom_sf_text(
+        data = regions,
+        aes(label = name),
+        size = 3.5,
+        fontface = "bold",
+        color = "#b10000",
+        nudge_y = -0.018,
+        vjust = 1
+    ) +
+
     # Tobacco heritage points
     geom_sf(
         data = barns,
