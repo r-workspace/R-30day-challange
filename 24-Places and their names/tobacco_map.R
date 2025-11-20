@@ -6,6 +6,13 @@ library(ggplot2)
 library(dplyr)
 library(rnaturalearth)
 library(rnaturalearthdata)
+library(ggspatial)
+library(magick)
+library(cowplot)
+library(grid)
+
+# Turn off s2 processing to avoid geometry errors
+sf_use_s2(FALSE)
 
 # -------------------------------------------------
 # 1) Read your GeoJSON files
@@ -34,6 +41,31 @@ target_crs <- 4326
 barns <- st_transform(barns, target_crs)
 regions <- st_transform(regions, target_crs)
 nl <- st_transform(nl, target_crs)
+
+# Get populated places (cities) for Netherlands - use larger area
+cities <- ne_download(scale = "large", type = "populated_places", returnclass = "sf")
+cities <- st_transform(cities, target_crs)
+
+# Expand search area to include nearby cities
+cities_filtered <- cities %>%
+    filter(ADM0NAME == "Netherlands") %>%
+    filter(
+        st_coordinates(.)[, 1] >= 4.8 & st_coordinates(.)[, 1] <= 5.8 &
+            st_coordinates(.)[, 2] >= 51.7 & st_coordinates(.)[, 2] <= 52.2
+    ) %>%
+    filter(POP_MAX > 5000) # Only cities with population > 5000
+
+# Print cities found
+cat(sprintf("Found %d cities in the area\n", nrow(cities_filtered)))
+
+# Load municipalities (gemeenten) data
+municipalities_url <- "https://cartomap.github.io/nl/wgs84/gemeente_2025.geojson"
+municipalities <- st_read(municipalities_url, quiet = TRUE)
+municipalities <- st_transform(municipalities, target_crs)
+
+# Filter municipalities to map extent
+municipalities_filtered <- municipalities %>%
+    st_filter(st_as_sfc(st_bbox(c(xmin = 5.35, xmax = 5.65, ymin = 51.90, ymax = 52.07), crs = target_crs)))
 
 # -------------------------------------------------
 # 3) Define colors & shapes (similar to your web map)
@@ -64,9 +96,46 @@ p <- ggplot() +
     # Netherlands background
     geom_sf(
         data = nl,
-        fill = "grey95",
-        color = "grey80",
-        linewidth = 0.3
+        fill = "grey98",
+        color = "grey60",
+        linewidth = 0.5
+    ) +
+
+    # Municipality boundaries
+    geom_sf(
+        data = municipalities_filtered,
+        fill = NA,
+        color = "grey50",
+        linewidth = 0.3,
+        linetype = "dashed"
+    ) +
+
+    # Municipality labels
+    geom_sf_text(
+        data = municipalities_filtered,
+        aes(label = statnaam),
+        size = 2.5,
+        color = "grey40",
+        fontface = "plain",
+        alpha = 0.7
+    ) +
+
+    # Cities/towns as small points
+    geom_sf(
+        data = cities_filtered,
+        color = "grey30",
+        size = 1,
+        alpha = 0.6
+    ) +
+
+    # City labels
+    geom_sf_text(
+        data = cities_filtered,
+        aes(label = NAME),
+        size = 2.5,
+        color = "grey20",
+        nudge_y = 0.008,
+        fontface = "italic"
     ) +
 
     # Tobacco regions outline (red like in your web map)
@@ -124,16 +193,27 @@ p <- ggplot() +
         plot.caption     = element_text(size = 8)
     )
 
+# -------------------------------------------------
+# 5) Add Rabanism Logo
+# -------------------------------------------------
+# Read and convert logo to raster
+rbanism_logo <- image_read("https://rbanism.org/assets/imgs/about/vi_l.jpg")
+rbanism_logo_raster <- grid::rasterGrob(rbanism_logo, interpolate = TRUE)
+
+# Combine main plot with logo using cowplot
+final_plot <- ggdraw(p) +
+    draw_grob(rbanism_logo_raster, x = 0.80, y = 0.70, width = 0.20, height = 0.20)
+
 # Show the map in VS Code / R
-print(p)
+print(final_plot)
 
 # -------------------------------------------------
-# 5) Export as PNG image
+# 6) Export as PNG image
 # -------------------------------------------------
 cat("Saving plot to tobacco_heritage_netherlands.png...\n")
 ggsave(
     filename = "tobacco_heritage_netherlands.png",
-    plot     = p,
+    plot     = final_plot,
     width    = 8, # inches
     height   = 6,
     dpi      = 300,
