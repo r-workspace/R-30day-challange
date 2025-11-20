@@ -180,7 +180,7 @@ p <- ggplot() +
     labs(
         title    = "Tobacco Heritage in the Netherlands",
         subtitle = "Locations of tobacco barns and related heritage",
-        caption  = "Data: Tobacco_Heritage.geojson & regions.geojson"
+        caption  = "Data: Research by Rijnboutt company : Tobacco Heritage Project | Map: Massoud Ghaderian"
     ) +
     theme_minimal(base_family = "sans") +
     theme(
@@ -194,15 +194,48 @@ p <- ggplot() +
     )
 
 # -------------------------------------------------
-# 5) Add Rabanism Logo
+# 5) Create mini inset map
+# -------------------------------------------------
+# Create bounding box for the main map area
+study_area_bbox <- st_as_sfc(st_bbox(c(xmin = 5.40, xmax = 5.60, ymin = 51.93, ymax = 52.04), crs = target_crs))
+
+# Filter cities for mini map - specific major cities only
+major_cities <- c("Amsterdam", "Rotterdam", "Utrecht", "Eindhoven", "Zwolle", "Assen")
+cities_mini <- cities %>%
+    filter(ADM0NAME == "Netherlands") %>%
+    filter(NAME %in% major_cities)
+
+# Create mini overview map - focus on European Netherlands only
+mini_map <- ggplot() +
+    geom_sf(data = nl, fill = "grey90", color = "grey60", linewidth = 0.3) +
+    geom_sf(data = cities_mini, color = "grey40", size = 0.5, alpha = 0.7) +
+    geom_sf_text(
+        data = cities_mini,
+        aes(label = NAME),
+        size = 1.8,
+        color = "grey30",
+        nudge_y = 0.05,
+        fontface = "plain"
+    ) +
+    geom_sf(data = study_area_bbox, fill = "#b10000", color = "#b10000", alpha = 0.5, linewidth = 0.8) +
+    coord_sf(xlim = c(3.2, 7.3), ylim = c(50.7, 53.6), expand = FALSE) +
+    theme_void() +
+    theme(
+        panel.background = element_blank(),
+        plot.margin = margin(0, 0, 0, 0)
+    )
+
+# -------------------------------------------------
+# 6) Add Rabanism Logo and mini map
 # -------------------------------------------------
 # Read and convert logo to raster
 rbanism_logo <- image_read("https://rbanism.org/assets/imgs/about/vi_l.jpg")
 rbanism_logo_raster <- grid::rasterGrob(rbanism_logo, interpolate = TRUE)
 
-# Combine main plot with logo using cowplot
+# Combine main plot with logo and mini map using cowplot
 final_plot <- ggdraw(p) +
-    draw_grob(rbanism_logo_raster, x = 0.80, y = 0.70, width = 0.20, height = 0.20)
+    draw_grob(rbanism_logo_raster, x = 0.77, y = 0.70, width = 0.20, height = 0.20) +
+    draw_plot(mini_map, x = 0.77, y = 0.08, width = 0.20, height = 0.20)
 
 # Show the map in VS Code / R
 print(final_plot)
