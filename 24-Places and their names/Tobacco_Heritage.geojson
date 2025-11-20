@@ -1,0 +1,803 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4620170001844599,
+          51.999179000410606
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "Name": "01",
+        "Code": "S01",
+        "Huidige_Be": "Opslag",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4614613468637003,
+          51.998667581143991
+        ]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "Name": "02",
+        "Code": "S02",
+        "Huidige_Be": "Tabaksteeltmuseum",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4594369999176706,
+          51.999281999764548
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "Name": "03",
+        "Code": "S03",
+        "Huidige_Be": "Woning met atelier",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.458348000060198,
+          51.999528000317014
+        ]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "Name": "04",
+        "Code": "S04",
+        "Huidige_Be": "Woning",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4571770000185893,
+          51.999921999600645
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "Name": "05",
+        "Code": "S05",
+        "Huidige_Be": "Twee woningen",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4552609997953709,
+          51.9975760002323
+        ]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "Name": "06",
+        "Code": "S06",
+        "Huidige_Be": "Twee woningen",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4666940000280988,
+          51.999009999811676
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "Name": "07",
+        "Code": "S07",
+        "Huidige_Be": "Opslag",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4555670004168064,
+          52.001980000076969
+        ]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "Name": "08",
+        "Code": "S08",
+        "Huidige_Be": "Woning en bedrijf (kwekerij)",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4630389996501663,
+          52.003510999632965
+        ]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "Name": "09",
+        "Code": "S09",
+        "Huidige_Be": "Meubelmakerij",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.462231000160557,
+          52.0026030000285
+        ]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "Name": "10",
+        "Code": "S10",
+        "Huidige_Be": "Twee woningen",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.466717000189476,
+          52.006254000221986
+        ]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "Name": "11",
+        "Code": "S11",
+        "Huidige_Be": "Kringloopwinkel",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4574239997178893,
+          52.00627300019886
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "Name": "12",
+        "Code": "S12",
+        "Huidige_Be": "Stal voor paarden",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4571040002494442,
+          52.005810999578046
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "Name": "13",
+        "Code": "S13",
+        "Huidige_Be": "Stalling van caravans e.d., verblijfsruimte",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4533699998256679,
+          51.998007000322843
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "Name": "14",
+        "Code": "S14",
+        "Huidige_Be": "Woning",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4520599996693022,
+          51.998825000273598
+        ]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "Name": "15",
+        "Code": "S15",
+        "Huidige_Be": "Twee woningen",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4697899998087109,
+          52.007384000171498
+        ]
+      },
+      "properties": {
+        "OBJECTID": 16,
+        "Name": "16",
+        "Code": "S16",
+        "Huidige_Be": "Woning",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4711699995958725,
+          52.011888000131137
+        ]
+      },
+      "properties": {
+        "OBJECTID": 17,
+        "Name": "18",
+        "Code": "S17",
+        "Huidige_Be": "Garage",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4700090000154091,
+          52.009360999610522
+        ]
+      },
+      "properties": {
+        "OBJECTID": 18,
+        "Name": "17",
+        "Code": "S18",
+        "Huidige_Be": "Paardenstal",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4722269997762396,
+          51.998138000068707
+        ]
+      },
+      "properties": {
+        "OBJECTID": 19,
+        "Name": "19",
+        "Code": "S19",
+        "Huidige_Be": "Woning",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4723409996374812,
+          51.999816000108353
+        ]
+      },
+      "properties": {
+        "OBJECTID": 20,
+        "Name": "20",
+        "Code": "S20",
+        "Huidige_Be": "Educatief centrum",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4730140000961001,
+          51.999293000271791
+        ]
+      },
+      "properties": {
+        "OBJECTID": 21,
+        "Name": "21",
+        "Code": "S21",
+        "Huidige_Be": "Opslag",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4754999996253559,
+          51.99998099962346
+        ]
+      },
+      "properties": {
+        "OBJECTID": 22,
+        "Name": "22",
+        "Code": "S22",
+        "Huidige_Be": "Opslag",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4709589997580679,
+          52.00116000003402
+        ]
+      },
+      "properties": {
+        "OBJECTID": 23,
+        "Name": "23",
+        "Code": "S23",
+        "Huidige_Be": "Onbekend",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4787059999819689,
+          52.003457999886848
+        ]
+      },
+      "properties": {
+        "OBJECTID": 24,
+        "Name": "24",
+        "Code": "S24",
+        "Huidige_Be": "Trouwlocatie, locatie voor feesten en partijen",
+        "Stad": "Amerongen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4618198076380509,
+          51.998890992525332
+        ]
+      },
+      "properties": {
+        "OBJECTID": 25,
+        "Name": "25",
+        "Code": "S25",
+        "Huidige_Be": "Opslag",
+        "Stad": "Amerongen",
+        "Type": "Tabakspakhuis"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4851062375628885,
+          51.988123437546676
+        ]
+      },
+      "properties": {
+        "OBJECTID": 26,
+        "Name": "26",
+        "Code": "S26",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4879829088841916,
+          51.987841532460834
+        ]
+      },
+      "properties": {
+        "OBJECTID": 27,
+        "Name": "27",
+        "Code": "S27",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.493174199529733,
+          51.991617301897008
+        ]
+      },
+      "properties": {
+        "OBJECTID": 28,
+        "Name": "28",
+        "Code": "S28",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4912924266042751,
+          51.991127308978207
+        ]
+      },
+      "properties": {
+        "OBJECTID": 29,
+        "Name": "29",
+        "Code": "S29",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4912625835014524,
+          51.987423725424662
+        ]
+      },
+      "properties": {
+        "OBJECTID": 30,
+        "Name": "30",
+        "Code": "S30",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5017956096796752,
+          51.990024336354111
+        ]
+      },
+      "properties": {
+        "OBJECTID": 31,
+        "Name": "31",
+        "Code": "S31",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5055973515366077,
+          51.989692500908234
+        ]
+      },
+      "properties": {
+        "OBJECTID": 32,
+        "Name": "32",
+        "Code": "S32",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5143415506221345,
+          51.980587523495444
+        ]
+      },
+      "properties": {
+        "OBJECTID": 33,
+        "Name": "33",
+        "Code": "S33",
+        "Huidige_Be": null,
+        "Stad": "Elst",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5327130605593311,
+          51.970569750393736
+        ]
+      },
+      "properties": {
+        "OBJECTID": 34,
+        "Name": "34",
+        "Code": "S34",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5530262751425425,
+          51.963481299422483
+        ]
+      },
+      "properties": {
+        "OBJECTID": 35,
+        "Name": "35",
+        "Code": "S35",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5471257332660002,
+          51.965723189673497
+        ]
+      },
+      "properties": {
+        "OBJECTID": 36,
+        "Name": "36",
+        "Code": "S36",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5464129108272004,
+          51.966035452274355
+        ]
+      },
+      "properties": {
+        "OBJECTID": 37,
+        "Name": "37",
+        "Code": "S37",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5458761801416472,
+          51.966663090029613
+        ]
+      },
+      "properties": {
+        "OBJECTID": 38,
+        "Name": "38",
+        "Code": "S38",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5588947660806411,
+          51.991667908547186
+        ]
+      },
+      "properties": {
+        "OBJECTID": 39,
+        "Name": "39",
+        "Code": "S39",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Tabakshofstede"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5661605867417165,
+          51.958339562320987
+        ]
+      },
+      "properties": {
+        "OBJECTID": 40,
+        "Name": "40",
+        "Code": "S40",
+        "Huidige_Be": null,
+        "Stad": "Rhenen",
+        "Type": "Sigarenfabriek"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5293317652487985,
+          51.978818521957294
+        ]
+      },
+      "properties": {
+        "OBJECTID": 41,
+        "Name": "41",
+        "Code": "S41",
+        "Huidige_Be": null,
+        "Stad": "Plantage Willem III",
+        "Type": "Tabaksschuur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5268598652905894,
+          51.980423467369178
+        ]
+      },
+      "properties": {
+        "OBJECTID": 42,
+        "Name": "42",
+        "Code": "S42",
+        "Huidige_Be": null,
+        "Stad": "Plantage Willem III",
+        "Type": "Tabaksschuur"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "amerongen",
+        "name": "Amerongen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.447,
+              52.015
+            ],
+            [
+              5.485,
+              52.015
+            ],
+            [
+              5.485,
+              51.990
+            ],
+            [
+              5.447,
+              51.990
+            ],
+            [
+              5.447,
+              52.015
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tobacco_heritage",
+        "name": "Tobacco Heritage Region"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.4420,
+              52.0169
+            ],
+            [
+              5.5712,
+              52.0169
+            ],
+            [
+              5.5712,
+              51.9533
+            ],
+            [
+              5.4420,
+              51.9533
+            ],
+            [
+              5.4420,
+              52.0169
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
